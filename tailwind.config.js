@@ -3,10 +3,9 @@ module.exports = {
     content: [
         "src/views/**/*.twig",
         "src/assets/js/**/*.js",
-        //todo:: inject it via the plugin or easier way
         'node_modules/@salla.sa/twilight-tailwind-theme/safe-list-css.txt',
     ],
-    darkMode: 'class', // or 'media' or 'class'
+    darkMode: 'class',
     theme   : {
         container : {
             center : true,
@@ -30,7 +29,27 @@ module.exports = {
             gridTemplateColumns: {
                 'auto-fill'  : 'repeat(auto-fill, 290px)',
             },
-            colors             : {
+            colors: {
+                // الألوان الأساسية
+                primary: {
+                    DEFAULT: '#2E7D32', // أخضر زيتي
+                    light: '#66BB6A',   // أخضر عشبي
+                },
+                secondary: {
+                    DEFAULT: '#0277BD', // أزرق داكن
+                    light: '#4FC3F7',   // أزرق سماوي
+                },
+                // الألوان الثانوية
+                accent: {
+                    DEFAULT: '#FF9800', // برتقالي
+                    dark: '#F57C00'
+                },
+                neutral: {
+                    light: '#F5F5F5', // رمادي فاتح للخلفيات
+                    DEFAULT: '#9E9E9E',
+                    dark: '#616161',
+                },
+                brown: '#5D4037', // بني ترابي
                 'dark'         : '#1D1F1F',
                 'darker'       : '#0E0F0F',
                 'danger'       : '#AE0A0A'
